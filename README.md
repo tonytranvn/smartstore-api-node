@@ -1,6 +1,6 @@
-# WooCommerce API - Node.js Client
+# SmartStore API - Node.js Client
 
-A Node.js client for the WooCommerce REST API. Easily interact with the WooCommerce REST API using this library.
+A Node.js client for the SmartStore REST API. Easily interact with the SmartStore REST API using this library.
 
 **- 2019-07-29: This client is obsolete and will no longer receive updates, a new JavaScript library is available under the name of [`@woocommerce/woocommerce-rest-api`](https://github.com/woocommerce/woocommerce-rest-api-js-lib).**
 
@@ -11,7 +11,7 @@ A Node.js client for the WooCommerce REST API. Easily interact with the WooComme
 ## Installation
 
 ```
-npm install --save woocommerce-api
+npm install --save smartstore-api
 ```
 
 ## Getting started
@@ -23,12 +23,12 @@ Check out the WooCommerce API endpoints and data that can be manipulated in <htt
 
 ## Setup
 
-Setup for the new WP REST API integration (WooCommerce 2.6 or later):
+Setup for the new SP REST API integration (SmartStore 4.x or later):
 
 ```js
-var WooCommerceAPI = require('woocommerce-api');
+var SmartStoreAPI = require('smartstore-api');
 
-var WooCommerce = new WooCommerceAPI({
+var SmartStore = new SmartStoreAPI({
   url: 'http://example.com',
   consumerKey: 'ck_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
   consumerSecret: 'cs_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
@@ -37,12 +37,12 @@ var WooCommerce = new WooCommerceAPI({
 });
 ```
 
-Setup for the old WooCommerce legacy API:
+Setup for the old SmartStore legacy API:
 
 ```js
-var WooCommerceAPI = require('woocommerce-api');
+var SmartStoreAPI = require('smartstore-api');
 
-var WooCommerce = new WooCommerceAPI({
+var SmartStore = new SmartStoreAPI({
   url: 'http://example.com',
   consumerKey: 'ck_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
   consumerSecret: 'cs_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
